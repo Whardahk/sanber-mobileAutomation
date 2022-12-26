@@ -2,7 +2,8 @@
 
 How to Start
 
-Install 
+Install
+
 1. Node JS
 2. Java SDK & JAVA_HOME
 3. Android Studio & ANDROID_HOME
@@ -14,9 +15,17 @@ Install
 ```
 
 How to run
+
 1. Connect to your device android or IOS
 2. Setup desired capabilities in file wdio.conf.js
 3. Run test
+
 ```
   npm run wdio
 ```
+
+## Documentation
+
+Test Case: https://docs.google.com/spreadsheets/d/1XA9melxCvLZoNalsf12omTnogewl5yIfpWpeIwoFwQY/edit?usp=sharing
+
+Testing Video: https://github.com/Whardahk/sanber-mobileAutomation/tree/master/test/video
