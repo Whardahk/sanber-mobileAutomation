@@ -1,5 +1,11 @@
 # sanber-mobileAutomation
 
+## Documentation
+
+Test Case: https://docs.google.com/spreadsheets/d/1XA9melxCvLZoNalsf12omTnogewl5yIfpWpeIwoFwQY/edit?usp=sharing
+
+Testing Video: https://github.com/Whardahk/sanber-mobileAutomation/tree/master/test/video
+
 How to Start
 
 Install
@@ -23,9 +29,3 @@ How to run
 ```
   npm run wdio
 ```
-
-## Documentation
-
-Test Case: https://docs.google.com/spreadsheets/d/1XA9melxCvLZoNalsf12omTnogewl5yIfpWpeIwoFwQY/edit?usp=sharing
-
-Testing Video: https://github.com/Whardahk/sanber-mobileAutomation/tree/master/test/video
