@@ -1,5 +1,3 @@
-# sanber-mobileAutomation
-
 ## Documentation
 
 Test Case: https://docs.google.com/spreadsheets/d/1XA9melxCvLZoNalsf12omTnogewl5yIfpWpeIwoFwQY/edit?usp=sharing
