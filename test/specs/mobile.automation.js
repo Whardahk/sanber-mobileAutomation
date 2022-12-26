@@ -25,17 +25,30 @@ describe("Open Application", () => {
   //     );
   //   });
 
-  it("should open Read Assets", async () => {
+  //   it("should open Read Assets", async () => {
+  //     await $("//android.widget.TextView[@content-desc='Content']").click();
+  //     await $("//android.widget.TextView[@content-desc='Assets']").click();
+  //     await $("//android.widget.TextView[@content-desc='Read Asset']").click();
+  //     await expect(
+  //       $(
+  //         "/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.TextView"
+  //       ).toHaveAttribute(
+  //         "text",
+  //         "This text is stored in a raw Asset. It was read and placed into the TextView here."
+  //       )
+  //     );
+  //   });
+
+  it("should open Default Layout", async () => {
     await $("//android.widget.TextView[@content-desc='Content']").click();
-    await $("//android.widget.TextView[@content-desc='Assets']").click();
-    await $("//android.widget.TextView[@content-desc='Read Asset']").click();
+    await $("//android.widget.TextView[@content-desc='Resources']").click();
+    await $(
+      "//android.widget.TextView[@content-desc='Layout Reference']"
+    ).click();
     await expect(
       $(
-        "/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.TextView"
-      ).toHaveAttribute(
-        "text",
-        "This text is stored in a raw Asset. It was read and placed into the TextView here."
-      )
+        "//android.widget.TextView[@content-desc='Default layout']"
+      ).toHaveAttribute("text", "Default layout")
     );
   });
 
