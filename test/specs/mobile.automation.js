@@ -39,16 +39,27 @@ describe("Open Application", () => {
   //     );
   //   });
 
-  it("should open Default Layout", async () => {
+  //   it("should open Default Layout", async () => {
+  //     await $("//android.widget.TextView[@content-desc='Content']").click();
+  //     await $("//android.widget.TextView[@content-desc='Resources']").click();
+  //     await $(
+  //       "//android.widget.TextView[@content-desc='Layout Reference']"
+  //     ).click();
+  //     await expect(
+  //       $(
+  //         "//android.widget.TextView[@content-desc='Default layout']"
+  //       ).toHaveAttribute("text", "Default layout")
+  //     );
+  //   });
+
+  it("should open Style text", async () => {
     await $("//android.widget.TextView[@content-desc='Content']").click();
     await $("//android.widget.TextView[@content-desc='Resources']").click();
-    await $(
-      "//android.widget.TextView[@content-desc='Layout Reference']"
-    ).click();
+    await $("//android.widget.TextView[@content-desc='Styled Text']").click();
     await expect(
       $(
-        "//android.widget.TextView[@content-desc='Default layout']"
-      ).toHaveAttribute("text", "Default layout")
+        "//android.widget.TextView[@content-desc='lain, bold, italic, bold-italic']"
+      ).toHaveAttribute("text", "Plain, bold, italic, bold-italic")
     );
   });
 
